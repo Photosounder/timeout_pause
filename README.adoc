@@ -6,6 +6,6 @@ At first it will show a line like this that contains a countdown: +
 `Press any key to avoid exiting (in 2.4 sec)` +
 If you do nothing it will time out normally and erase that line, otherwise if you press a key it will say: +
 `Press any key to exit.` +
-And then when you press any key to exit.
+And then when you press any key it exits.
 
 This way you can add something like `timeout_pause 2.8` to the end of a batch script, and if you see anything funny (let's say it's a compilation script and there are some errors so you don't want the window to close) you can press any key and then take your time to read what it says until you're done and press any key again. Because I'm frightfully clever there's at least 0.125 seconds after any key is pressed during which other keys can be pressed and ignored, this way you can fat-finger the Any key without accidentally triggering the closing of the window.
